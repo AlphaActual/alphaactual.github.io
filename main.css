@@ -30,6 +30,10 @@ select {
     font: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* END OF BASE SETUP */
 * {
     /* outline: 1px solid red; */
@@ -50,22 +54,45 @@ p {
 
 .nav-link,
 .heading {
+    display: inline-block;
+}
+
+.nav-link {
+    font-size: 1.7rem;
     color: #fbde07;
     text-decoration: none;
-    font-size: 2rem;
 }
 
 aside {
     width: 20vw;
-    background-color: #131313;
-    position: fixed;
-    height: 100%;
+    background-color: #0f0f0f;
+    position: fixed !important;
+    height: 100% !important;
 }
 
-.navigation {
+.navigation,
+.basic-info {
     padding: 48px;
 }
 
+h1 {
+    font-size: 2.6rem;
+    color: #fbde07;
+    padding-bottom: 1rem;
+}
+
+
+h2 {
+    font-size: 2rem;
+    color: #fbde07;
+    padding-bottom: .8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #fbde07;
+    padding-bottom: .5rem;
+}
 
 .nav-list {
     display: flex;
@@ -79,13 +106,13 @@ li {
 
 .nav-link {
     display: inline-block;
-    padding: 1rem 0 1.6rem 0;
+    padding: 1rem 0 1.2rem 0;
 }
 
 main {
     width: 80vw;
     margin-left: 20vw;
-    padding: 10vw;
+    padding: 0 10vw;
 }
 
 section,
@@ -94,24 +121,37 @@ h1 {
 }
 
 section {
-    min-height: 400px;
+    min-height: 100vh;
+
 }
 
-.about-section {
+#about-section {
     display: flex;
-    /* flex-wrap: wrap; */
 
 }
 
-.about-text {
+.about-text,
+.skills-text {
     font-size: 1.5rem;
+}
+
+.p-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
 }
 
 .text-div,
 .image-div {
-    /* flex-basis: 50%; */
-    display: inline-block;
+    display: block;
     width: 50%;
+}
+
+.text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .image-div {
@@ -122,6 +162,31 @@ section {
 
 .profile-pic {
     border-radius: 50%;
-    width: 200px;
+    border: 1rem;
+    width: 300px;
+    border-color: #fbde07;
+    border-style: ridge;
+    transition: all .4s;
 
+}
+
+.profile-pic:hover {
+    transform: scale(103%);
+}
+
+#skills-section {
+    padding-top: 3rem;
+}
+
+.yellow-text {
+    color: #fbde07
+}
+
+.skills-image {
+    background-image: url("./images/top10lan.jpg");
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 2rem;
 }
