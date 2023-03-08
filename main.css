@@ -21,6 +21,7 @@ video {
 
 body {
     min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
 input,
@@ -225,6 +226,67 @@ section:not(#about) {
     padding-bottom: 2rem;
 }
 
+.edu-text,
+.edu-image {
+    width: 50%;
+}
+
 #edu-section {
     min-height: 50vh;
+    display: flex;
+}
+
+.edu-image {
+    background: url("./images/education.png");
+    border-radius: 5px;
+    background-position: center;
+
+
+}
+
+.faks h2,
+.posao h2 {
+    display: inline;
+}
+
+.posao h2 li {
+    font-size: 2rem;
+}
+
+.posao p {
+    padding-left: 3rem;
+}
+
+.posao-kompanije {
+    padding-left: 3rem;
+    font-size: 1.5rem;
+}
+
+#exp-section {
+    min-height: 50vh;
+}
+
+.kategorija {
+    color: white;
+}
+
+table {
+    text-align: center;
+
+}
+
+th {
+    padding-right: 1rem;
+}
+
+.eng {
+    padding-right: 2rem;
+}
+
+.info-block {
+    margin-bottom: 5rem;
+}
+
+.info-block li {
+    font-size: 1.3rem;
 }

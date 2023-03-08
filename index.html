@@ -8,6 +8,9 @@
     <title>Tin Pritišanac</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./effects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="./script.js" defer></script>
 </head>
 
@@ -17,7 +20,7 @@
         <aside class="slideMeLeft">
             <div class="basic-info">
                 <h2>Tin Pritišanac</h2>
-                <h3>Junior developer</h3>
+                <h3>Junior web developer</h3>
                 <p>
                     <span>Marca Garbina 2</span> <br>
                     <span>Rovinj, 52210</span> <br>
@@ -34,7 +37,7 @@
                     <li><a class="nav-link rotate10 slideMeLeft" href="#projects"> Projekti</a></li>
                     <li><a class="nav-link rotate10 slideMeLeft" href="#edu-section"> Obrazovanje</a></li>
                     <li><a class="nav-link rotate10 slideMeLeft" href="#exp-section"> Radno iskustvo</a></li>
-                    <li><a class="nav-link rotate10 slideMeLeft" href="#"> Ostale informacije</a></li>
+                    <li><a class="nav-link rotate10 slideMeLeft" href="#info-section"> Ostale informacije</a></li>
                 </ul>
             </nav>
         </aside>
@@ -47,10 +50,10 @@
                     <h1 class="heading">O meni</h1>
                     <div class="p-wrapper">
                         <div>
-                            <p class="about-text slideMeBottom">Ja sam junior web developer i programer, s željom da
-                                kreiram kul i zanimljive projekte, naučim nove tehnologije i usavršavam svoje vještine
-                                uz put! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab sunt rerum pariatur
-                                itaque quasi maiores quis quas consectetur repellat natus?</p>
+                            <p class="about-text slideMeBottom">Moje ime je Tin Pritišanac i ja sam junior web developer
+                                i programer te student fakulteta Informatike u Puli. Želja mi je da
+                                kreirati kul i zanimljive projekte, naučiti nove tehnologije i usavršavati svoje
+                                vještine na ovom uzbudljivom putovanju! </p>
 
                         </div>
                     </div>
@@ -65,9 +68,9 @@
 
             <!-- skill section -->
             <section id="skills-section">
-                <div class="skills-text">
+                <div class="skills-text slideMeBottom">
                     <h1>Vještine</h1>
-                    <p class="skills-text slideMeBottom">
+                    <p class="skills-text">
                     <ul>
                         <li>Web frontend <span class="yellow-text">(HTML, CSS, SASS
                                 ,Bootstrap,
@@ -87,7 +90,7 @@
                     </ul>
                     </p>
                 </div>
-                <div class="skills-image"></div>
+                <div class="skills-image fadeIn"></div>
             </section>
             <!-- kraj skills-sectiona -->
 
@@ -95,7 +98,7 @@
             <section id="projects">
                 <h1>Projekti</h1>
                 <!-- projekt -->
-                <div class="projekt">
+                <div class="projekt slideMeBottom">
                     <h2><a href="https://www.astridpritisanac.com" target="_blank">Atelier Astrid Pritišanac</a></h2>
                     <ul>
                         <li>
@@ -109,7 +112,7 @@
                 <!-- kraj projekta -->
 
                 <!-- projekt -->
-                <div class="projekt">
+                <div class="projekt slideMeBottom">
                     <h2><a href="https://vedras-project.netlify.app" target="_blank">Vedras </a></h2>
                     <ul>
                         <li>
@@ -128,7 +131,7 @@
                 <!-- kraj projekta -->
 
                 <!-- projekt -->
-                <div class="projekt">
+                <div class="projekt slideMeBottom">
                     <h2><a href="https://imaginestudios.netlify.app" target="_blank">ImagineStudios </a></h2>
                     <ul>
                         <li>
@@ -147,8 +150,8 @@
                 <!-- kraj projekta -->
 
                 <!-- projekt -->
-                <div class="projekt">
-                    <h2><a href="" target="_blank">Drugi Projekti </a></h2>
+                <div class="projekt slideMeBottom">
+                    <h2><a href="https://github.com/AlphaActual" target="_blank">Drugi Projekti </a></h2>
                     <a href="https://github.com/AlphaActual" target="_blank"><img src="./images/Picture1.png"
                             alt="git profil"></a>
 
@@ -160,18 +163,24 @@
 
             <!-- edu section -->
             <section id="edu-section">
+
                 <div class="edu-text">
                     <h1>Obrazovanje</h1>
-                    <div class="faks">
-                        <h2>Fakultet informatike u Puli</h2>
+                    <div class="faks slideMeBottom">
+                        <h2>
+                            <li>Fakultet informatike u Puli</li>
+                        </h2>
+
                         <p>Listopad 2021. – danas <br>
                             Izvanredni student druge godine studija Informatike
                         </p>
 
                     </div>
 
-                    <div class="faks">
-                        <h2>Pomorski fakultet Split</h2>
+                    <div class="faks slideMeBottom">
+                        <h2>
+                            <li>Pomorski fakultet Split</li>
+                        </h2>
                         <p>Listopad 2011. – Lipanj 2014. <br>
                             Sveučilišni prvostupnik inženjer nautike
 
@@ -180,7 +189,8 @@
 
 
                 </div>
-                <div class="edu-image"></div>
+                <div class="edu-image fadeIn slideMeBottom"></div>
+
             </section>
             <!-- kraj edu sectiona -->
 
@@ -188,8 +198,21 @@
             <section id="exp-section">
                 <div class="exp-text">
                     <h1>Radno iskstvo</h1>
-                    <div class="posao">
-                        <h2>Zapovjednik broda</h2>
+
+                    <div class="posao slideMeBottom">
+                        <h2>
+                            <li>Junior developer</li>
+                        </h2>
+                        <p> Lloyds Digital d.o.o. 2023. – danas. <br>
+                            Podrška i održavanje projekata.
+
+                        </p>
+
+                    </div>
+                    <div class="posao slideMeBottom">
+                        <h2>
+                            <li>Zapovjednik broda</li>
+                        </h2>
                         <p> Mirconi d.o.o. 2020. – 2022. <br>
                             Zapovjednik linijskog broda za prijevoz putnika
 
@@ -197,10 +220,12 @@
 
                     </div>
 
-                    <div class="posao">
-                        <h2>Pomorski nautičar </h2>
+                    <div class="posao slideMeBottom">
+                        <h2>
+                            <li>Pomorski nautičar</li>
+                        </h2>
                         <p>
-                        <ul>
+                        <ul class="posao-kompanije">
                             <li>
                                 Nippon Yūsen Kabushiki Kaisha Line 2014. – 2015. <br>
                                 Pomorska praksa i stipendija na brodu poznate japanske tvrtke
@@ -221,7 +246,49 @@
 
             <!-- info section -->
             <section id="info-section">
+                <div class="info-block slideMeBottom">
+                    <h1>
+                        Vozačka dozvola
+                    </h1>
+                    <h3 class="kategorija"><span class="yellow-text">B</span> kategorije</h3>
+                </div>
 
+                <div class="info-block slideMeBottom">
+                    <h1>Jezične vještine</h1>
+                    <table>
+                        <tr>
+                            <th rowspan="2"></th>
+                            <th colspan="2">RAZUMIJEVANJE</th>
+                            <th colspan="2">GOVOR</th>
+                        </tr>
+                        <tr>
+                            <th>Slušanje</th>
+                            <th>Čitanje</th>
+                            <th>Govorna produkcija</th>
+                            <th>Govorna interakcija</th>
+                        </tr>
+                        <tr>
+                            <td class="eng">ENGLESKI</td>
+                            <td>C2</td>
+                            <td>C2</td>
+                            <td>C1</td>
+                            <td>C1</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="info-block slideMeBottom">
+                    <h1>Kratke informacije</h1>
+                    <ul>
+                        <li>Volim riješavati zadatke na <span class="yellow-text">kreativne</span> načine</li>
+                        <li><span class="yellow-text">Sviram</span> gitaru</li>
+                        <li>Inspiraciju pronalazim <span class="yellow-text">poučavajući</span> druge novom znanju</li>
+                        <li>Veliki sam obožavatelj <span class="yellow-text">fotografije i poezije</span> </li>
+                        <li>Bavim se trčanjem <span class="yellow-text">i hikingom</span> </li>
+                        <li>Slobodno vrijeme provodim <span class="yellow-text"> s obitelji u prirodi</span></li>
+                    </ul>
+                </div>
             </section>
             <!-- kraj info sectiona -->
         </main>

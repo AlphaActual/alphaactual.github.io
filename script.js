@@ -48,6 +48,7 @@ function runAnimations() {
     // observing fade elements
     elementsToFade.forEach(function (element) {
         observer.observe(element);
+        console.log(element)
     });
     // observing slide elements
     elementsToSlideRight.forEach(function (element) {
