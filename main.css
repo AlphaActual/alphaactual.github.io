@@ -100,13 +100,17 @@ h3 {
     justify-content: center;
 }
 
-li {
+.nav-list li {
     list-style: none;
 }
 
 .nav-link {
     display: inline-block;
     padding: 1rem 0 1.2rem 0;
+}
+
+.basic-info a {
+    color: #fbde07;
 }
 
 main {
@@ -133,6 +137,11 @@ section {
 .about-text,
 .skills-text {
     font-size: 1.5rem;
+}
+
+.skills-text li,
+.edu-text li {
+    padding-bottom: .5rem;
 }
 
 .p-wrapper {
@@ -163,7 +172,7 @@ section {
 .profile-pic {
     border-radius: 50%;
     border: 1rem;
-    width: 300px;
+    width: 400px;
     border-color: #fbde07;
     border-style: ridge;
     transition: all .4s;
@@ -174,8 +183,9 @@ section {
     transform: scale(103%);
 }
 
-#skills-section {
+section:not(#about) {
     padding-top: 3rem;
+
 }
 
 .yellow-text {
@@ -185,8 +195,36 @@ section {
 .skills-image {
     background-image: url("./images/top10lan.jpg");
     height: 400px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 2rem;
+}
+
+.projekt {
+    padding-bottom: 2rem;
+}
+
+.projekt li,
+.posao li {
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+}
+
+.projekt a {
+    color: #fbde07;
+}
+
+.edu-text,
+.exp-text {
+    font-size: 1.3rem;
+}
+
+.faks,
+.posao {
+    padding-bottom: 2rem;
+}
+
+#edu-section {
+    min-height: 50vh;
 }
